@@ -10,6 +10,11 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/springcloud?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
   jpa:
     show-sql: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 ribbon:
   ReadTimeout: 60000
   ConnectTimeout: 60000
@@ -18,7 +23,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
   instance:
-    prefer-ip-address: true  
+    prefer-ip-address: true
 env:
   devdevdev
 girl:
