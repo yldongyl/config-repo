@@ -21,3 +21,6 @@ eureka:
     prefer-ip-address: true  
 env:
   devdevdev
+girl:
+  name: lily
+  age: 18
