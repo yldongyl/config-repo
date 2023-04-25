@@ -1,13 +1,6 @@
 zuul:
   routes:
-    #/myProduct/product/list -> /product/list
-    myProduct:
-      path: /myProduct/**
-      service-id: product
-      sensitiveHeaders:
-    #简洁写法
-#    product: /myProduct/**
-  #排除某些路由
+    product: /myProduct/**
   ignored-patterns:
     - /**/product/listForOrder
   host:
